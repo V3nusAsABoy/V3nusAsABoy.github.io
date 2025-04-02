@@ -1,0 +1,42 @@
+body{
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-areas: "header"
+    "about";
+}
+
+header{
+    background: rgb(255, 0, 255);
+    grid-area: header;
+    width:100%;
+    height: 10em;
+    position:relative;
+}
+
+header > h1{
+    text-align: center;
+    font-size: 3em;
+}
+
+#aboutMeMain{
+    background-color: black;
+    grid-area: aboutMeMain;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+#aboutMe{
+    grid-area: about;
+    background-color: rgb(111, 0, 98);
+    display:grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: ". . ."
+    ". aboutMeMain ."
+    ". . .";
+    height:50em;
+    width:100%;
+    position:relative;
+}
