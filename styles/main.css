@@ -21,7 +21,7 @@ header > h1{
 
 #cards{
     grid-area: about;
-    background-color: rgba(0, 0, 0, 0.916);
+    background-color: rgba(34, 0, 34, 0.903);
     display:grid;
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
