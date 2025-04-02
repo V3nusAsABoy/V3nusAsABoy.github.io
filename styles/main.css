@@ -43,10 +43,12 @@ header > h1{
     display:flex;
     align-items: center;
     justify-content: center;
+    border: solid rgb(255, 213, 0) 0.2em;
 }
 
 #aboutMe > div{
     background-color: white;
     height: 80%;
     width: 90%;
+    box-shadow: 0.5em 0.5em 2em black;
 }
