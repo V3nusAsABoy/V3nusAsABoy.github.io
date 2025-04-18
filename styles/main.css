@@ -73,6 +73,7 @@ h1{
 
 .fa-arrow-left{
     grid-area:leftArrow;
+    display:none;
 }
 
 .fa-arrow-right{
