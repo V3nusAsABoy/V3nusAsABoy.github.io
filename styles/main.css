@@ -7,7 +7,7 @@ body{
 }
 
 header{
-    background: rgb(255, 0, 255);
+    background: rgb(194, 0, 194);
     grid-area: header;
     width:100%;
     height: 10em;
@@ -16,6 +16,7 @@ header{
 
 header > h1{
     text-align: center;
+    color:white;
 }
 
 h1{
@@ -29,7 +30,7 @@ h1{
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: ". . ."
-    ". aboutMeMain ."
+    ". card ."
     ". . .";
     height:50em;
     width:100%;
@@ -39,7 +40,7 @@ h1{
 #aboutMe{
     background-image:url("../img/aboutmebackground.png");
     background-size: 100%;
-    grid-area: aboutMeMain;
+    grid-area: card;
     position:absolute;
     width:100%;
     height:100%;
@@ -50,6 +51,26 @@ h1{
 }
 
 #aboutMe > div{
+    background-color: white;
+    height: 80%;
+    width: 90%;
+    box-shadow: 0.5em 0.5em 2em black;
+}
+
+#projects{
+    background-color: black;
+    grid-area: card;
+    position:absolute;
+    width:100%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(255, 213, 0) 0.2em;
+    left:-100em;
+}
+
+#projects > div{
     background-color: white;
     height: 80%;
     width: 90%;
