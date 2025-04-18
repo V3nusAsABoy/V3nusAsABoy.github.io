@@ -36,7 +36,7 @@ h1{
     grid-template-rows: 1fr 3fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: ". . ."
-    ". card ."
+    "leftArrow card rightArrow"
     ". . .";
     height:50em;
     width:100%;
@@ -69,4 +69,19 @@ h1{
     height: 80%;
     width: 90%;
     box-shadow: 0.1em 0.1em 3em 0.01em;
+}
+
+.fa-arrow-left{
+    grid-area:leftArrow;
+}
+
+.fa-arrow-right{
+    grid-area:rightArrow;
+}
+
+.arrow{
+    font-size: 5em;
+    align-self: center;
+    justify-self: center;
+    color: white;
 }
