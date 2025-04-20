@@ -73,7 +73,6 @@ h1{
 
 #leftArrow{
     grid-area:leftArrow;
-    display: none;
 }
 
 #rightArrow{
