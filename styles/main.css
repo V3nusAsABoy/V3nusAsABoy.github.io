@@ -50,7 +50,7 @@ h1{
 
 #projects{
     background-color: black;
-    left:-100em;
+    right:100em;
 }
 
 .card{
@@ -71,12 +71,12 @@ h1{
     box-shadow: 0.1em 0.1em 3em 0.01em;
 }
 
-.fa-arrow-left{
+#leftArrow{
     grid-area:leftArrow;
     display: none;
 }
 
-.fa-arrow-right{
+#rightArrow{
     grid-area:rightArrow;
 }
 
