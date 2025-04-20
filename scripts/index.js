@@ -21,42 +21,33 @@ rightArrow.addEventListener("click", function(){
     }
 });
 
-function frameLeft() {
-    if(pos == 100){
-        clearInterval(id);
-    } else{
-        let elem = cards[current];
-        elem.style.right = pos + "em";
-        pos++;
-    }
-}
-function frameRight() {
-    if(pos == 100){
-        clearInterval(id);
-    } else {
-        let elem = cards[current];
-        elem.style.left = pos + "em";
-        pos++;
-    }
-}
-
 function move(left){
-    pos = 0;
     let id = null;
     clearInterval(id);
     if(left){
+        pos = 0;
         id = setInterval(frameLeft, 5)
-        if(current != 0){
-            clearInterval(id);
-            setInterval(frameRight, 5)
-        }
-        clearInterval(id);
     } else{
-        id = setInterval(frameRight, 5)
-        if(current != cards.length){
-            clearInterval(id);
-            setInterval(frameRight, 5)
-        }
         clearInterval(id);
+        pos = -100;
+        id = setInterval(frameRight, 5)
+    }
+    function frameLeft() {
+        if(pos == 100){
+            clearInterval(id);
+        } else{
+            let elem = cards[current];
+            elem.style.right = pos + "em";
+            pos+=5;
+        }
+    }
+    function frameRight() {
+        if(pos == 5){
+            clearInterval(id);
+        } else {
+            let elem = cards[current];
+            elem.style.left = pos + "em";
+            pos = pos+5;
+        }
     }
 }
