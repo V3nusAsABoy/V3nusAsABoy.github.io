@@ -12,7 +12,10 @@ leftArrow.addEventListener("click", function(){
     current--;
     move(true);
     if(rightArrow.style.display === "none"){
-        rightArrow.style.display == "block";
+        rightArrow.style.display = "block";
+    }
+    if(current == 0){
+        leftArrow.style.display = "none";
     }
 });
 
@@ -21,6 +24,9 @@ rightArrow.addEventListener("click", function(){
     move(false);
     if(leftArrow.style.display === "none"){
         leftArrow.style.display = "block";
+    }
+    if(current == cards.length-1){
+        rightArrow.style.display = "none";
     }
 });
 
@@ -36,15 +42,15 @@ function move(left){
         id = setInterval(frameRight, 5)
     }
     function frameLeft() {
-        if(pos == 100){
+        if(pos == -105){
             clearInterval(id);
         } else{
             let elem = cards[current];
-            elem.style.right = pos + "em";
-            pos+=5;
+            elem.style.left = pos + 100 + "em";
+            pos-=5;
             if(current != current.length - 1){
-                let elem2 = cards[current-1];
-                elem2.style.right = pos + 100 + "em";
+                let elem2 = cards[current+1];
+                elem2.style.left = pos + "em";
             }
         }
     }
@@ -56,7 +62,7 @@ function move(left){
             elem.style.left = pos + "em";
             pos = pos+5;
             if(current != 0){
-                let elem2 = cards[current+1];
+                let elem2 = cards[current-1];
                 elem2.style.left = pos + 100 + "em";
             }
         }
