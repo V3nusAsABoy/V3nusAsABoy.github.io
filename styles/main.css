@@ -74,6 +74,24 @@ h1{
     height: 80%;
     width: 90%;
     box-shadow: 0.1em 0.1em 1em 0.01em;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows:0.5fr 1fr;
+}
+
+.mainCardSection h1{
+    grid-row:1;
+    margin:1em;
+}
+
+.mainCardSection p{
+    grid-row:2;
+    margin:1em;
+    margin-left:3em;
+}
+
+.mainCardSection ul{
+    grid-row:2;
 }
 
 #leftArrow{
