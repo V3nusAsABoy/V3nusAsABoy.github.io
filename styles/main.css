@@ -75,7 +75,7 @@ h1{
     width: 90%;
     box-shadow: 0.1em 0.1em 1em 0.01em;
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1.4fr;
     grid-template-rows:0.5fr 1fr;
 }
 
@@ -86,12 +86,17 @@ h1{
 
 .mainCardSection p{
     grid-row:2;
-    margin:1em;
-    margin-left:3em;
+    margin-left:1em;
+    font-size:1.5em;
 }
 
 .mainCardSection ul{
     grid-row:2;
+    margin-left: 1em;
+}
+
+.mainCardSection li{
+    font-size:2em;
 }
 
 #leftArrow{
