@@ -117,3 +117,7 @@ h1{
 #workExperience h1:first-of-type{
     text-align: center;
 }
+
+#workExperience{
+    background-image: linear-gradient(to bottom, rgb(29, 84, 195), rgb(14, 64, 173));
+}
