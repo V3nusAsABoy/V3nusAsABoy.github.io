@@ -113,3 +113,7 @@ h1{
     justify-self: center;
     color: white;
 }
+
+#workExperience h1:first-of-type{
+    text-align: center;
+}
