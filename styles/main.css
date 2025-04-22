@@ -121,3 +121,12 @@ h1{
 #workExperience{
     background-image: linear-gradient(to bottom, rgb(29, 84, 195), rgb(14, 64, 173));
 }
+
+.whiteLine{
+    height:35em;
+    border-left: solid 0.1em white;
+    margin-left:auto;
+    margin-right:auto;
+    width:0.1%;
+    display:flex;
+}
