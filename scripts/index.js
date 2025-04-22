@@ -10,7 +10,7 @@ rightArrow.style.display = "block";
 
 leftArrow.addEventListener("click", function(){
     current--;
-    move(true);
+    move(false);
     if(rightArrow.style.display === "none"){
         rightArrow.style.display = "block";
     }
@@ -21,7 +21,7 @@ leftArrow.addEventListener("click", function(){
 
 rightArrow.addEventListener("click", function(){
     current++;
-    move(false);
+    move(true);
     if(leftArrow.style.display === "none"){
         leftArrow.style.display = "block";
     }
@@ -48,8 +48,8 @@ function move(left){
             let elem = cards[current];
             elem.style.left = pos + 100 + "em";
             pos-=5;
-            if(current != current.length - 1){
-                let elem2 = cards[current+1];
+            if(current != 0){
+                let elem2 = cards[current-1];
                 elem2.style.left = pos + "em";
             }
         }
@@ -61,8 +61,8 @@ function move(left){
             let elem = cards[current];
             elem.style.left = pos + "em";
             pos = pos+5;
-            if(current != 0){
-                let elem2 = cards[current-1];
+            if(current != current.length-1){
+                let elem2 = cards[current+1];
                 elem2.style.left = pos + 100 + "em";
             }
         }
