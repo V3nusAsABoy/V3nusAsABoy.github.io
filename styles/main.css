@@ -114,8 +114,7 @@ h1{
     color: white;
 }
 
-#workExperience h1:first-of-type{
-    text-align: center;
+#workExperience h1, #workExperience h2, #workExperience h3,#workExperience h4,#workExperience h5,#workExperience h6,#workExperience p{
     color:white;
 }
 
@@ -126,8 +125,14 @@ h1{
 .whiteLine{
     height:35em;
     border-left: solid 0.1em white;
-    margin-left:auto;
-    margin-right:auto;
-    width:0.1%;
-    display:flex;
+}
+
+#workExperience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#workExperience img{
+    margin:1em;
 }
