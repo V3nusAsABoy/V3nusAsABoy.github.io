@@ -127,7 +127,7 @@ h1{
     border-left: solid 0.1em white;
 }
 
-#workExperience{
+#workExperience, .work{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,4 +135,13 @@ h1{
 
 #workExperience img{
     margin:1em;
+    width: 20em;
+}
+.bigger{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.work{
+    margin:5em;
 }

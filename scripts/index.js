@@ -68,3 +68,16 @@ function move(left){
         }
     }
 }
+
+const observer = new IntersectionObserver((divs) => {
+    divs.forEach((div) => {
+        if(div.isIntersecting){
+            div.target.classList.add('bigger');
+        } else {
+            div.target.classList.remove('bigger');
+        }
+    })
+})
+
+const workDivs = document.querySelectorAll('.work');
+workDivs.forEach((div) => observer.observe(div));
