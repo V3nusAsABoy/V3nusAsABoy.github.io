@@ -63,14 +63,6 @@ p{
     right:100em;
 }
 
-.mainCardSection:nth-child(2n){
-    border-color: rgb(255, 140, 0);
-}
-
-.mainCardSection:nth-child(2n+1){
-    border-color: rgb(255, 200, 0);
-}
-
 .mainCardSection{
     background-color: rgb(10, 10, 10);
     height: 90%;
@@ -79,6 +71,14 @@ p{
     grid-template-columns: 2fr 1.4fr;
     grid-template-rows:0.5fr 1fr;
     border: solid 0.1em;
+}
+
+.card:nth-child(2n) > .mainCardSection{
+    border-color: rgb(255, 153, 0);
+}
+
+.card:nth-child(2n+1) > .mainCardSection{
+    border-color: rgb(255, 200, 0);
 }
 
 .mainCardSection h1{
