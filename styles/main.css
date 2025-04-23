@@ -29,6 +29,11 @@ h1{
     font-weight: 400;
 }
 
+p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
 #cards{
     grid-area: about;
     background-image: linear-gradient(to top left, rgb(96, 0, 96),black);
@@ -47,15 +52,6 @@ h1{
     right:0em;
 }
 
-.card:nth-child(2n){
-    
-    /*border-color: #0088ff;*/
-}
-
-.card:nth-child(2n+1){
-    /*border-color:rgb(255, 172, 64);*/
-}
-
 .card{
     grid-area: card;
     position:absolute;
@@ -64,35 +60,44 @@ h1{
     display:flex;
     align-items: center;
     justify-content: center;
-    /*border: solid 0.2em;*/
     right:100em;
 }
 
+.mainCardSection:nth-child(2n){
+    border-color: rgb(255, 140, 0);
+}
+
+.mainCardSection:nth-child(2n+1){
+    border-color: rgb(255, 200, 0);
+}
+
 .mainCardSection{
-    background-color: white;
+    background-color: rgb(10, 10, 10);
     height: 90%;
     width: 95%;
-    /*box-shadow: 0.1em 0.1em 1em 0.01em;*/
     display:grid;
     grid-template-columns: 2fr 1.4fr;
     grid-template-rows:0.5fr 1fr;
-    border: solid 0.5em rgb(198, 129, 0);
+    border: solid 0.1em;
 }
 
 .mainCardSection h1{
     grid-row:1;
     margin:1em;
+    color:white;
 }
 
 .mainCardSection p{
     grid-row:2;
     margin-left:1em;
     font-size:1.5em;
+    color:white;
 }
 
 .mainCardSection ul{
     grid-row:2;
     margin-left: 1em;
+    color:white;
 }
 
 .mainCardSection li{
