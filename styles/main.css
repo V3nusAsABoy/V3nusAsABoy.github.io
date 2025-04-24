@@ -78,11 +78,12 @@ p{
 }
 
 .card:nth-child(2n+1) > .mainCardSection{
-    border-color: rgb(255, 200, 0);
+    border-color: rgb(255, 191, 0);
 }
 
 .mainCardSection h1{
     margin:1em;
+    margin-bottom: 0;
     color:white;
 }
 
@@ -95,6 +96,7 @@ p{
     grid-row:2;
     grid-column: 1;
     margin-left:1em;
+    margin-top: 0;
     font-size:2em;
     color:white;
 }
@@ -102,6 +104,7 @@ p{
 .mainCardSection ul{
     grid-row:2;
     margin-left: 1em;
+    margin-top: 0;
     color:white;
 }
 
