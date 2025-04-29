@@ -148,6 +148,22 @@ p{
     align-self: center;
     justify-self: center;
     color: white;
+    transition: 0.3s;
+    padding: 0.2em 0.3em 0.2em 0.3em;
+    border: solid 0.05em white;
+    border-radius: 1em;
+    background-color: rgba(0, 0, 0, 0.489);
+    transition-property: color,background-color,padding;
+}
+
+.arrow:hover{
+    cursor:pointer;
+    color:black;
+    background-color:rgba(128, 128, 128, 0.489);
+    padding: 0.3em 0.4em 0.3em 0.4em;
+    border-radius: 1em;
+    transition: 0.3s;
+    transition-property: color,background-color,padding;
 }
 
 #workExperience h1, #workExperience h2, #workExperience h3,#workExperience h4,#workExperience h5,#workExperience h6,#workExperience p{
