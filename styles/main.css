@@ -44,9 +44,10 @@ p{
     grid-area: about;
     background-image: linear-gradient(to top left, rgb(96, 0, 96),black);
     display:grid;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 5em 5em 3fr 1fr;
     grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: ". . ."
+    "nav nav nav"
     "leftArrow card rightArrow"
     ". . .";
     height:50em;
@@ -230,4 +231,20 @@ p{
 #webProjects hr{
     border: solid black 0.01em;
     width:70em;
+}
+
+#cardsNav{
+    grid-area:nav;
+    color:white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#cardsNav p{
+    font-family:'Oswald';
+    font-weight: 200;
+    font-size: 2em;
+    margin-right:1em;
 }
