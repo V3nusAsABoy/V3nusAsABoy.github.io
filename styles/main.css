@@ -189,10 +189,20 @@ p{
     background-image: linear-gradient(to bottom, rgb(255, 186, 58), orange);
 }
 
+#individualProjects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding:1em;
+    margin:1em;
+    border: solid gray 0.1em;
+}
+
 #webProjects img{
     width:40em;
     height:22em;
-    border: solid white 0.3em;
+    border: solid black 0.1em;
     border-radius: 2em;
 }
 
