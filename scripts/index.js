@@ -86,28 +86,30 @@ workDivs.forEach((div) => observer.observe(div));
 
 for(let i = 0; i < navOptions.length; i++){
     navOptions[i].addEventListener("click", function(){
-        if(i > current){
-            navOptions[current].classList.remove("current");
-            move(true, cards[i], cards[current]);
-            current = i;
-            navOptions[current].classList.add("current");
-            if(leftArrow.style.display === "none"){
-                    leftArrow.style.display = "block";
+        if(i != current){
+            if(i > current){
+                navOptions[current].classList.remove("current");
+                move(true, cards[i], cards[current]);
+                current = i;
+                navOptions[current].classList.add("current");
+                if(leftArrow.style.display === "none"){
+                        leftArrow.style.display = "block";
+                }
+                if(current == cards.length-1){
+                        rightArrow.style.display = "none";
+                }
             }
-            if(current == cards.length-1){
-                    rightArrow.style.display = "none";
-            }
-        }
-        else{
-            navOptions[current].classList.remove("current");
-            move(false, cards[i], cards[current]);
-            current = i;
-            navOptions[current].classList.add("current");
-            if(rightArrow.style.display === "none"){
-                rightArrow.style.display = "block";
-            }
-            if(current == 0){
-                leftArrow.style.display = "none";
+            else{
+                navOptions[current].classList.remove("current");
+                move(false, cards[i], cards[current]);
+                current = i;
+                navOptions[current].classList.add("current");
+                if(rightArrow.style.display === "none"){
+                    rightArrow.style.display = "block";
+                }
+                if(current == 0){
+                    leftArrow.style.display = "none";
+                }
             }
         }
     });
