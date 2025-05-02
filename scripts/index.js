@@ -88,10 +88,8 @@ for(let i = 0; i < navOptions.length; i++){
     navOptions[i].addEventListener("click", function(){
         if(i > current){
             navOptions[current].classList.remove("current");
-            for(let j = current; j < i; j++){
-                current++;
-                move(true);
-            }
+            move(true, cards[i], cards[current]);
+            current = i;
             navOptions[current].classList.add("current");
             if(leftArrow.style.display === "none"){
                     leftArrow.style.display = "block";
@@ -102,10 +100,8 @@ for(let i = 0; i < navOptions.length; i++){
         }
         else{
             navOptions[current].classList.remove("current");
-            for(let j = current; j > i; j--){
-                current--;
-                move(false);
-            }
+            move(false, cards[i], cards[current]);
+            current = i;
             navOptions[current].classList.add("current");
             if(rightArrow.style.display === "none"){
                 rightArrow.style.display = "block";
