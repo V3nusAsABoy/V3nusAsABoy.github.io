@@ -2,6 +2,8 @@ current = 0;
 
 cards = document.getElementsByClassName("card");
 
+navOptions = document.getElementById("cardsNav").children;
+
 leftArrow = document.getElementById("leftArrow");
 rightArrow = document.getElementById("rightArrow");
 
@@ -11,6 +13,8 @@ rightArrow.style.display = "block";
 leftArrow.addEventListener("click", function(){
     current--;
     move(false);
+    navOptions[current+1].classList.remove("current");
+    navOptions[current].classList.add("current");
     if(rightArrow.style.display === "none"){
         rightArrow.style.display = "block";
     }
@@ -22,6 +26,8 @@ leftArrow.addEventListener("click", function(){
 rightArrow.addEventListener("click", function(){
     current++;
     move(true);
+    navOptions[current-1].classList.remove("current");
+    navOptions[current].classList.add("current");
     if(leftArrow.style.display === "none"){
         leftArrow.style.display = "block";
     }
