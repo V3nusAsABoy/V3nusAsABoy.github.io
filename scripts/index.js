@@ -25,7 +25,7 @@ leftArrow.addEventListener("click", function(){
 
 rightArrow.addEventListener("click", function(){
     current++;
-    move(true, cards[current], cards[current+1]);
+    move(true, cards[current], cards[current-1]);
     navOptions[current-1].classList.remove("current");
     navOptions[current].classList.add("current");
     if(leftArrow.style.display === "none"){
