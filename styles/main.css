@@ -4,6 +4,8 @@ body{
     margin:0;
     padding:0;
     display:grid;
+    position:absolute;
+    width:100%;
     grid-template-areas: "header"
     "about"
     "experience"
@@ -185,16 +187,17 @@ p, li{
 }
 
 #sidebarExperience{
-    grid-column:1;
     color:white;
-    position:sticky;
     font-size:2em;
-    top:10em;
     align-self: start;
+    height: fit-content;
+    position:sticky;
+    top:10em;
+    margin-top:10em;
+    margin-bottom:10em;
 }
 
 #timeline{
-    grid-column:2;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -296,9 +299,4 @@ p, li{
 
 html { 
     scroll-behavior: smooth; 
-}
-
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
 }
