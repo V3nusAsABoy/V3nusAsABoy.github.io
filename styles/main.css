@@ -195,14 +195,18 @@ p, li{
     top:10em;
     margin-top:10em;
     margin-bottom:10em;
+    border-left: solid 0.1em white;
+    padding-top:2em;
+    margin-left:1em;
+    padding-left:2em;
 }
 
 #sidebarExperience li{
     margin-bottom:2em;
     transition: 0.2s;
+    position:relative;
     color:rgb(166, 166, 166);
 }
-
 #timeline{
     display:flex;
     flex-direction: column;
