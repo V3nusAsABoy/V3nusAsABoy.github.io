@@ -72,9 +72,17 @@ function move(left, elem, elem2){
 }
 
 const observer = new IntersectionObserver((divs) => {
+    const divlis = [].slice.call(document.getElementById('sidebarExperience').children);
     divs.forEach((div) => {
         if(div.isIntersecting){
             div.target.classList.add('bigger');
+            divlis.forEach((divli) =>{
+                if(div.target.classList.contains((divli.classList[0]))){
+                    divli.style.color = "white";
+                } else {
+                    divli.style.color = "rgb(166, 166, 166)";
+                }
+            })
         } else {
             div.target.classList.remove('bigger');
         }

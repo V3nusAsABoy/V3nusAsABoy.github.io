@@ -182,7 +182,7 @@ p, li{
     grid-area:experience;
     display:grid;
     background-image: linear-gradient(to bottom, rgb(29, 84, 195), rgb(14, 64, 173));
-    grid-template-columns: 20em 1fr;
+    grid-template-columns: 30em 1fr;
     align-items: start;
 }
 
@@ -197,11 +197,17 @@ p, li{
     margin-bottom:10em;
 }
 
+#sidebarExperience li{
+    margin-bottom:2em;
+    transition: 0.2s;
+    color:rgb(166, 166, 166);
+}
+
 #timeline{
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-right:20em;
+    margin-right:30em;
 }
 
 .whiteLine{
@@ -290,6 +296,12 @@ p, li{
     transform: scale(1.3);
     transition: 0.2s;
     cursor:pointer;
+}
+
+#sidebarExperience li:hover{
+    font-size:1.4em;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .current{
