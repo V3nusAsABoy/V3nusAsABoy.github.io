@@ -79,8 +79,10 @@ const observer = new IntersectionObserver((divs) => {
             divlis.forEach((divli) =>{
                 if(div.target.classList.contains((divli.classList[0]))){
                     divli.style.color = "white";
+                    divli.children[0].style.color = "white";
                 } else {
                     divli.style.color = "rgb(166, 166, 166)";
+                    divli.children[0].style.color = "rgb(166, 166, 166)";
                 }
             })
         } else {
