@@ -316,3 +316,11 @@ p, li{
 html { 
     scroll-behavior: smooth; 
 }
+
+#cards a{
+    color:rgb(144, 207, 227);
+}
+
+#cards a:visited{
+    color:rgb(255, 81, 243);
+}
