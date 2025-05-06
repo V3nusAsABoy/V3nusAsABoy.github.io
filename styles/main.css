@@ -77,13 +77,17 @@ p, li{
     right:100em;
 }
 
+#hardSkills > .mainCardSection, #softSkills > .mainCardSection{
+    grid-template-columns: 40em 1fr;
+}
+
 .mainCardSection{
     background-color: rgb(10, 10, 10);
     height: 90%;
     width: 95%;
     display:grid;
-    grid-template-columns: 50em 1fr;
     grid-template-rows:10em 1fr;
+    grid-template-columns: 50em 1fr;
     border: solid 0.1em;
 }
 
@@ -334,14 +338,20 @@ html {
 }
 
 .icon{
-    color:aqua;
     font-size:10em;
+    color:white;
 }
 
 .icons{
     grid-column:2;
-    grid-row:1;
+    grid-row:2;
     display:flex;
-    flex-direction: column;
-    margin-top:20%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20%;
+    width:25em;
+    border: solid 0.1em aqua;
+    padding:2em;
+    border-radius:1em;
 }
