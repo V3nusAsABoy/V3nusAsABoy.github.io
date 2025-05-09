@@ -364,3 +364,16 @@ html {
     grid-row: 2;
     margin-top:1em;
 }
+
+.softIcons{
+    display:flex;
+    margin-top:10em;
+    margin-left:4.5em;
+    width:30em;
+}
+
+.softIcon{
+    color:aqua;
+    margin:auto;
+    font-size:10em;
+}
