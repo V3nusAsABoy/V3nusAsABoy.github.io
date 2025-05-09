@@ -136,7 +136,7 @@ p, li{
     border: solid 0.01em aqua;
 }
 
-.mainCardSection img{
+#aboutMe img{
     grid-row: 1;
     grid-column: 2;
     width: 15em;
@@ -337,21 +337,41 @@ html {
     justify-content: space-between;
 }
 
-.icon{
-    font-size:10em;
-    color:white;
-}
-
 .icons{
+    margin-top: 5em;
+    margin-left:2.5em;
     grid-column:2;
-    grid-row:2;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    grid-row:1;
+    display:grid;
+    grid-template-rows: 7em 1fr;
+    grid-template-columns: 10em 1fr;
     margin-bottom:20%;
-    width:25em;
-    border: solid 0.1em aqua;
     padding:2em;
     border-radius:1em;
+    border:solid 0.1em aqua;
+    height:fit-content;
+    width:fit-content;
+    background-color: rgb(41, 41, 41);
+}
+
+.icons img{
+    width:5em;
+    height:6em;
+}
+
+.icons img:first-child, .icons img:nth-child(3){
+    grid-column: 1;
+}
+
+.icons img:nth-child(2), .icons img:nth-child(4){
+    grid-column: 2;
+}
+
+.icons img:first-child, .icons img:nth-child(2){
+    grid-row:1;
+}
+
+.icons img:nth-child(3), .icons img:nth-child(4){
+    grid-row: 2;
+    margin-top:1em;
 }
