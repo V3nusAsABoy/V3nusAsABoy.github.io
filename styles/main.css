@@ -394,3 +394,15 @@ html {
     color:rgba(255, 255, 255, 0.809);
     font-size:10em;
 }
+
+.contactIcons{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:17em;
+}
+
+.contactIcons img{
+    width:11em;
+    margin-top:3em;
+}
