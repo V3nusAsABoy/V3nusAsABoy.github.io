@@ -418,3 +418,59 @@ html {
     color:aqua;
     font-size:10em;
 }
+
+@media screen and (max-width:750px){
+    #webProjects{
+        align-items: start;
+        padding:2em;
+    }
+
+    #individualProjects{
+        padding:0em;
+        margin:0em;
+        background: none;
+        border: none;
+    }
+
+    #webProjects p{
+        width:40em;
+    }
+
+    #webProjects hr{
+        display:none;
+    }
+}
+
+@media screen and (max-width:660px){
+    #webProjects p{
+        width:35em;
+    }
+}
+
+@media screen and (max-width:570px){
+    #webProjects p{
+        width:30em;
+    }
+}
+
+@media screen and (max-width:500px){
+    #webProjects p{
+        width:25em;
+    }
+}
+
+@media screen and (max-width:410px){
+    #webProjects p{
+        width:20em;
+    }
+}
+
+@media screen and (max-width:350px){
+    #webProjects img{
+        transform: scale(0.8)
+    }
+
+    #webProjects p{
+        width:15em;
+    }
+}
