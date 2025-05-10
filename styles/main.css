@@ -406,3 +406,15 @@ html {
     width:11em;
     margin-top:3em;
 }
+
+.experienceIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.experienceIcons i{
+    color:aqua;
+    font-size:10em;
+}
