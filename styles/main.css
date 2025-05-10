@@ -439,6 +439,18 @@ html {
     #webProjects hr{
         display:none;
     }
+
+    #sidebarExperience{
+        display:none;
+    }
+
+    #workExperience{
+        grid-template-columns: 1fr;
+    }
+
+    #timeline{
+        width:100%;
+    }
 }
 
 @media screen and (max-width:660px){
