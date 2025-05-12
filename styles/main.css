@@ -463,7 +463,21 @@ html {
     }
 }
 
+@media screen and (max-width:1550px){
+    #hardSkills .icons, #hardSkills .icons > img{
+        transform: scale(0.9);
+    }
+}
 
+@media screen and (max-width:750px){
+    #hardSkills .icons, #hardSkills .icons > img{
+        transform: scale(0.7);
+    }
+
+    #hardSkills > .mainCardSection{
+        grid-template-columns: 30em 1fr;
+    }
+}
 
 @media screen and (max-width: 350px) {
     #webProjects p{
