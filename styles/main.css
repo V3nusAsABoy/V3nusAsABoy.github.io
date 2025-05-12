@@ -527,4 +527,13 @@ html {
     #webProjects p{
         transform: scale(0.9);
     }
+    .arrow{
+        transform:scale(0.8);
+    }
+    #rightArrow{
+        justify-self: start;
+    }
+    #leftArrow{
+        justify-self: end;
+    }
 }
