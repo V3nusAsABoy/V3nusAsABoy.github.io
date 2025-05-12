@@ -2,6 +2,10 @@ current = 0;
 
 cards = document.getElementsByClassName("card");
 
+for(let i = 1; i < cards.length; i++){
+    cards[i].style.display = "none";
+}
+
 navOptions = document.getElementById("cardsNav").children;
 
 leftArrow = document.getElementById("leftArrow");
@@ -12,11 +16,12 @@ rightArrow.style.display = "block";
 
 leftArrow.addEventListener("click", function(){
     current--;
+    cards[current].style.display = "";
     move(false, cards[current], cards[current+1]);
     navOptions[current+1].classList.remove("current");
     navOptions[current].classList.add("current");
     if(rightArrow.style.display === "none"){
-        rightArrow.style.display = "block";
+        rightArrow.style.display = "";
     }
     if(current == 0){
         leftArrow.style.display = "none";
@@ -25,11 +30,12 @@ leftArrow.addEventListener("click", function(){
 
 rightArrow.addEventListener("click", function(){
     current++;
+    cards[current].style.display = "";
     move(true, cards[current], cards[current-1]);
     navOptions[current-1].classList.remove("current");
     navOptions[current].classList.add("current");
     if(leftArrow.style.display === "none"){
-        leftArrow.style.display = "block";
+        leftArrow.style.display = "";
     }
     if(current == cards.length-1){
         rightArrow.style.display = "none";
@@ -50,6 +56,7 @@ function move(left, elem, elem2){
     function frameLeft() {
         if(pos == -105){
             clearInterval(id);
+            elem2.style.display = "none";
         } else{
             elem.style.left = pos + 100 + "em";
             pos-=5;
@@ -61,6 +68,7 @@ function move(left, elem, elem2){
     function frameRight() {
         if(pos == 5){
             clearInterval(id);
+            elem2.style.display = "none";
         } else {
             elem.style.left = pos + "em";
             pos = pos+5;
