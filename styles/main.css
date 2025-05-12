@@ -467,6 +467,10 @@ html {
     #hardSkills .icons, #hardSkills .icons > img{
         transform: scale(0.9);
     }
+
+    #softSkills .softIcons > i{
+        width:20em;
+    }
 }
 
 @media screen and (max-width:750px){
@@ -476,6 +480,15 @@ html {
 
     #hardSkills > .mainCardSection{
         grid-template-columns: 30em 1fr;
+    }
+
+    #softSkills .softIcons{
+        width:10em;
+        margin-left:1.5em;
+    }
+
+    #softSkills .softIcons > i{
+        transform: scale(0.7);
     }
 }
 
