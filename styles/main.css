@@ -457,6 +457,14 @@ html {
     }
 }
 
+@media screen and (max-width:1675px){
+    #aboutMe > .mainCardSection{
+        grid-template-columns: 35em 1fr;
+    }
+}
+
+
+
 @media screen and (max-width: 350px) {
     #webProjects p{
         transform: scale(0.9);
