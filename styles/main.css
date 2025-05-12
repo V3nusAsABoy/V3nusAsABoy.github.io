@@ -463,6 +463,12 @@ html {
     }
 }
 
+@media screen and (max-width:1600px){
+    #education > .mainCardSection{
+        grid-template-columns:45em 1fr;;
+    }
+}
+
 @media screen and (max-width:1550px){
     #hardSkills .icons, #hardSkills .icons > img{
         transform: scale(0.9);
@@ -489,6 +495,10 @@ html {
 
     #softSkills .softIcons > i{
         transform: scale(0.7);
+    }
+
+    #education > .mainCardSection{
+        grid-template-columns:40em 1fr;;
     }
 }
 
