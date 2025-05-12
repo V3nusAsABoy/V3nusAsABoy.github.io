@@ -105,6 +105,7 @@ workDivs.forEach((div) => observer.observe(div));
 for(let i = 0; i < navOptions.length; i++){
     navOptions[i].addEventListener("click", function(){
         if(i != current){
+            cards[i].style.display = "";
             if(i > current){
                 navOptions[current].classList.remove("current");
                 move(true, cards[i], cards[current]);
