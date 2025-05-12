@@ -486,6 +486,10 @@ html {
         transform: scale(0.9);
         margin:0;
     }
+
+    #getInTouch .contactIcons{
+        align-items: start;
+    }
 }
 
 @media screen and (max-width:750px){
@@ -512,6 +516,10 @@ html {
 
     #experience > .mainCardSection{
         grid-template-columns: 40em 1fr;
+    }
+
+    #getInTouch > .mainCardSection{
+        grid-template-columns:45em 1fr;
     }
 }
 
