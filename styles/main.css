@@ -477,6 +477,15 @@ html {
     #softSkills .softIcons > i{
         width:20em;
     }
+
+    #experience > .mainCardSection{
+        grid-template-columns: 45em 1fr;
+    }
+
+    #experience p{
+        transform: scale(0.9);
+        margin:0;
+    }
 }
 
 @media screen and (max-width:750px){
@@ -499,6 +508,10 @@ html {
 
     #education > .mainCardSection{
         grid-template-columns:40em 1fr;;
+    }
+
+    #experience > .mainCardSection{
+        grid-template-columns: 40em 1fr;
     }
 }
 
