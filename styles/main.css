@@ -526,6 +526,11 @@ html {
     #getInTouch > .mainCardSection{
         grid-template-columns:45em 1fr;
     }
+
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (max-width: 350px) {
