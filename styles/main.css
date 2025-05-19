@@ -66,7 +66,7 @@ p, li{
     "nav nav nav"
     "leftArrow card rightArrow"
     ". . .";
-    height:50em;
+    height:100vh;
     width:100%;
     position:relative;
 }
@@ -124,7 +124,7 @@ p, li{
     grid-column: 1;
     margin-left:1em;
     margin-top: 0;
-    font-size:2em;
+    font-size:4vh;
     color:white;
 }
 
@@ -148,7 +148,7 @@ p, li{
 #aboutMe img{
     grid-row: 1;
     grid-column: 2;
-    width: 15em;
+    width: 30vh;
     margin-left: auto;
     margin-top: 5em;
     margin-right: 5em;
