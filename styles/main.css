@@ -66,7 +66,7 @@ p, li{
     "nav nav nav"
     "leftArrow card rightArrow"
     ". . .";
-    height:100vh;
+    height:50em;
     width:100%;
     position:relative;
 }
@@ -124,7 +124,7 @@ p, li{
     grid-column: 1;
     margin-left:1em;
     margin-top: 0;
-    font-size:4vh;
+    font-size:2em;
     color:white;
 }
 
@@ -148,7 +148,7 @@ p, li{
 #aboutMe img{
     grid-row: 1;
     grid-column: 2;
-    width: 30vh;
+    width: 15em;
     margin-left: auto;
     margin-top: 5em;
     margin-right: 5em;
@@ -490,6 +490,7 @@ html {
     #experience p{
         transform: scale(0.9);
         margin:0;
+        font-size:1.9em;
     }
 
     #getInTouch .contactIcons{
@@ -534,6 +535,10 @@ html {
 }
 
 @media screen and (max-width: 350px) {
+    .card p{
+        transform:scale(0.9);
+    }
+
     #webProjects p{
         transform: scale(0.9);
     }
