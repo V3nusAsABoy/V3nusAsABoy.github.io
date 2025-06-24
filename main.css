@@ -1,3 +1,7 @@
+:root{
+    --thegreen: rgb(0, 107, 73);
+}
+
 body {
     display:grid;
     grid-template-areas: "header"
@@ -6,7 +10,7 @@ body {
     "experience"
     "projects"
     "contact";
-    grid-template-rows: 5em repeat(5, 100vh);
+    grid-template-rows: 10vh 90vh repeat(4, 100vh);
     position:absolute;
     width:100%;
     left:0;
@@ -18,11 +22,35 @@ body {
 header{
     grid-area: header;
     background-color: rgb(41, 41, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header h1, .title h1, #experience h1{
     color: white;
     text-align: center;
+}
+
+h1{
+    font-size:3em;
+}
+
+.title{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content p{
+    font-size:2em;
+    text-align: center;
+    width:25em;
 }
 
 #about{
@@ -42,7 +70,7 @@ header h1, .title h1, #experience h1{
 
 #experience{
     grid-area: experience;
-    background-color: green;
+    background-color: var(--thegreen);
 }
 
 #projects{
@@ -55,7 +83,7 @@ header h1, .title h1, #experience h1{
 
 #contact{
     grid-area: contact;
-    background-color: green;
+    background-color: var(--thegreen);
 }
 
 #contact h1{
@@ -64,7 +92,7 @@ header h1, .title h1, #experience h1{
 }
 
 .title{
-    background-color: green;
+    background-color: var(--thegreen);
     grid-area: title;
-    height:100vh;
+    height:90vh;
 }
