@@ -20,7 +20,7 @@ header{
     background-color: rgb(41, 41, 41);
 }
 
-header h1, .title h1{
+header h1, .title h1, #experience h1{
     color: white;
     text-align: center;
 }
@@ -42,6 +42,7 @@ header h1, .title h1{
 
 #experience{
     grid-area: experience;
+    background-color: green;
 }
 
 #projects{
