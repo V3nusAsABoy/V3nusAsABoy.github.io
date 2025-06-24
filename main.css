@@ -6,11 +6,23 @@ body {
     "experience"
     "projects"
     "contact";
-    grid-template-rows: 5em, repeat(5, 1fr);
+    grid-template-rows: 5em repeat(5, 1fr);
+    position:absolute;
+    width:100%;
+    left:0;
+    right:0;
+    height:100%;
+    margin:0;
 }
 
 header{
     grid-area: header;
+    background-color: rgb(41, 41, 41);
+}
+
+header h1{
+    color: white;
+    text-align: center;
 }
 
 #about{
