@@ -1,0 +1,34 @@
+body {
+    display:grid;
+    grid-template-areas: "header"
+    "about"
+    "skills"
+    "experience"
+    "projects"
+    "contact";
+    grid-template-rows: 5em, repeat(5, 1fr);
+}
+
+header{
+    grid-area: header;
+}
+
+#about{
+    grid-area: about;
+}
+
+#skills{
+    grid-area: skills;
+}
+
+#experience{
+    grid-area: experience;
+}
+
+#projects{
+    grid-area: projects;
+}
+
+#contact{
+    grid-area: contact;
+}
