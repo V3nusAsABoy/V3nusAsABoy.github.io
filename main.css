@@ -6,7 +6,7 @@ body {
     "experience"
     "projects"
     "contact";
-    grid-template-rows: 5em repeat(5, 1fr);
+    grid-template-rows: 5em repeat(5, 100vh);
     position:absolute;
     width:100%;
     left:0;
@@ -20,13 +20,17 @@ header{
     background-color: rgb(41, 41, 41);
 }
 
-header h1{
+header h1, .title h1{
     color: white;
     text-align: center;
 }
 
 #about{
     grid-area: about;
+    display: grid;
+    grid-template-areas: "title"
+    "content";
+    grid-template-columns: 30em 1fr;
 }
 
 #skills{
@@ -43,4 +47,9 @@ header h1{
 
 #contact{
     grid-area: contact;
+}
+
+.title{
+    background-color: green;
+    grid-area: title;
 }
