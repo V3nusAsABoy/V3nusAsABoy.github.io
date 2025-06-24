@@ -35,6 +35,9 @@ header h1, .title h1{
 
 #skills{
     grid-area: skills;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #experience{
@@ -52,4 +55,5 @@ header h1, .title h1{
 .title{
     background-color: green;
     grid-area: title;
+    height:100vh;
 }
