@@ -49,8 +49,18 @@ header h1, .title h1, #experience h1{
     grid-area: projects;
 }
 
+#projects h1{
+    text-align: center;
+}
+
 #contact{
     grid-area: contact;
+    background-color: green;
+}
+
+#contact h1{
+    text-align: center;
+    color:white;
 }
 
 .title{
