@@ -181,7 +181,6 @@ h3{
 }
 
 .project{
-    width:80%;
     background-color: white;
     border: 0.1em solid black;
     margin-bottom: 1em;
@@ -211,4 +210,10 @@ h3{
 
 .job{
     border: solid 0.1em black;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+    width:80%;
 }
