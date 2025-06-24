@@ -1,5 +1,6 @@
 :root{
     --thegreen: rgb(0, 107, 73);
+    --thedefault: rgb(255, 247, 230);
 }
 
 body {
@@ -40,17 +41,24 @@ h1{
     display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    background-color: var(--thegreen);
+    grid-area: title;
+    height:90vh;
 }
 .content{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--thedefault);
 }
 
 .content p{
     font-size:2em;
     text-align: center;
     width:25em;
+    border-bottom: 0.1em solid rgb(253, 183, 183);
+    padding-bottom:2em;
 }
 
 #about{
@@ -59,6 +67,12 @@ h1{
     grid-template-areas: "title"
     "content";
     grid-template-columns: 30em 1fr;
+}
+
+#about img{
+    width: 20em;
+    border-radius: 3em;
+    border: 0.5em solid rgb(255, 88, 88);
 }
 
 #skills{
@@ -89,10 +103,4 @@ h1{
 #contact h1{
     text-align: center;
     color:white;
-}
-
-.title{
-    background-color: var(--thegreen);
-    grid-area: title;
-    height:90vh;
 }
