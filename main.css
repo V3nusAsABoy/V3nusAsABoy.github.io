@@ -193,11 +193,15 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5em;
+    border-radius: 5vw;
 }
 
 .project img{
     width:90%;
+}
+
+.project h2{
+    text-align: center;
 }
 
 .project p{
@@ -221,7 +225,10 @@ h3{
 a{
     text-decoration: none;
     color:black;
-    width:80%;
+}
+
+#projects a{
+    width: 80%;
 }
 
 @media screen and (max-width:1330px) {
@@ -240,5 +247,53 @@ a{
 
     #about img{
         display:none;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .project p{
+        font-size: 1em;
+    }
+
+    .project h2{
+        font-size: 1.5em;
+    }
+
+    .jobHeading{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .job h3{
+        text-align: start;
+        margin-bottom:0.5em;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #about{
+        grid-template-areas: "title"
+        "content";
+        grid-template-rows: 5em 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .title{
+        height:5em;
+    }
+
+    .project h2{
+        font-size: 1.2em;
+    }
+
+    .content p{
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width: 400px){
+    header h1, #about h1{
+        font-size: 2em;
     }
 }
