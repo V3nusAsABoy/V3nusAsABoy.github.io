@@ -62,6 +62,7 @@ h3{
     background-color: var(--thegreen);
     grid-area: title;
     height:90vh;
+    border-right:0.5em solid rgb(41, 41, 41);
 }
 
 .content{
@@ -243,6 +244,7 @@ a{
         height:10em;
         flex-direction: row;
         justify-content:auto;
+        border-right:none;
     }
 
     #about img{
