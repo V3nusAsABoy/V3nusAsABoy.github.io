@@ -217,3 +217,22 @@ a{
     color:black;
     width:80%;
 }
+
+@media screen and (max-width:1330px) {
+    #about{
+        grid-template-areas: "title"
+        "content";
+        grid-template-rows: 10em 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .title{
+        height:10em;
+        flex-direction: row;
+        justify-content:auto;
+    }
+
+    #about img{
+        display:none;
+    }
+}
