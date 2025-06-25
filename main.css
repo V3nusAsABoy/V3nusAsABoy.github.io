@@ -5,6 +5,10 @@
     --thedefault: rgb(255, 247, 230);
 }
 
+*{
+    margin: 0;
+}
+
 body {
     display:grid;
     grid-template-areas: "header"
@@ -16,11 +20,7 @@ body {
     "footer";
     grid-template-rows: 10vh 90vh repeat(5, 1fr);
     position:absolute;
-    width:100%;
-    left:0;
-    right:0;
     height:100%;
-    margin:0;
 }
 
 header{
@@ -74,7 +74,7 @@ h3{
 .content p{
     font-size:2em;
     text-align: center;
-    width:25em;
+    width:75%;
     border-bottom: 0.1em solid rgb(253, 183, 183);
     padding-bottom:2em;
 }
@@ -101,9 +101,15 @@ h3{
     background-color: var(--thedefault);
 }
 
+#skills h2{
+    text-align: center;
+}
+
 .skills{
     display: flex;
     flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
 }
 
 .skill{
