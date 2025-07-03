@@ -253,7 +253,7 @@ header a{
     color:white;
     text-decoration: none;
     margin: 0.5em 1em 0.5em 1em;
-    font-size:2em;
+    font-size:2vw;
 }
 
 header a:visited{
@@ -275,7 +275,7 @@ header a:visited{
         border-right:none;
     }
 
-    #about img{
+    #about img, #border{
         display:none;
     }
 }
