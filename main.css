@@ -65,7 +65,7 @@ h3{
     background-color: var(--thegreen);
     background-image: linear-gradient(rgb(0, 160, 110), var(--thegreen));
     grid-area: title;
-    height:90vh;
+    height:10em;
 }
 
 .content{
@@ -77,10 +77,17 @@ h3{
 
 .content p{
     font-size:2em;
-    text-align: center;
+    color:black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    border: 0.1em solid var(--thegreen);
+    margin:2em;
+    padding:1em;
+    background-color: var(--thedefault);
+}
+
+.mainContent{
     width:75%;
-    border-bottom: 0.1em solid rgb(150, 0, 0);
-    padding-bottom:2em;
 }
 
 #about{
@@ -88,18 +95,24 @@ h3{
     display: grid;
     grid-template-areas: "title"
     "content";
-    grid-template-columns: 30em 1fr;
+    grid-template-rows: 10em 1fr;
 }
 
 #about img{
     width: 20em;
     border-radius: 3em;
+    border: solid 0.5em var(--thegreen);
 }
 
 #border{
     background-image: linear-gradient(135deg, rgb(255, 0, 0), rgb(150, 0, 0));
     padding:1em;
     border-radius: 3em;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 1em 1em 4em  black;
+    border: solid 0.1em var(--thegreen);
 }
 
 #skills{
@@ -260,6 +273,20 @@ header a:visited{
     color:white;
 }
 
+@media screen and (max-width: 1470px){
+    #border{
+        flex-direction: column;
+        margin:1em;
+        width:25em;
+        margin-left: auto;
+        margin-right:auto;
+    }
+
+    body{
+        grid-template-rows: 15vh repeat(6, 1fr);
+    }
+}
+
 @media screen and (max-width:1330px) {
     #about{
         grid-template-areas: "title"
@@ -275,9 +302,6 @@ header a:visited{
         border-right:none;
     }
 
-    #about img, #border{
-        display:none;
-    }
 }
 
 @media screen and (max-width: 750px){
