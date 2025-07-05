@@ -75,27 +75,41 @@ h3{
     background-color: var(--thedefault);
 }
 
-.content p{
+#about p{
     font-size:2em;
-    color:black;
+    color:white;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    border: 0.1em solid var(--thegreen);
     margin:2em;
     padding:1em;
-    background-color: var(--thedefault);
+    border-bottom: solid 0.1em rgba(0, 200, 83, 0.5);
 }
 
 .mainContent{
-    width:75%;
+    width:90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding:2em;
 }
 
 #about{
     grid-area: about;
-    display: grid;
-    grid-template-areas: "title"
-    "content";
-    grid-template-rows: 10em 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 160, 110), var(--thegreen));
+}
+
+#about h1{
+    color:white;
+    border-right:solid 0.1em white;
+    padding-right:2em;
+    height:12em;
+    align-items: center;
+    display:flex;
 }
 
 #about img{
@@ -113,6 +127,8 @@ h3{
     align-items: center;
     box-shadow: 1em 1em 4em  black;
     border: solid 0.1em var(--thegreen);
+    margin-left:2em;
+    width:70%;
 }
 
 #skills{
@@ -260,13 +276,14 @@ header nav{
     border-top: 0.1em solid white;
     width:100%;
     justify-content: center;
+    align-items: center;
 }
 
 header a{
     color:white;
     text-decoration: none;
     margin: 0.5em 1em 0.5em 1em;
-    font-size:2vw;
+    font-size:2em;
 }
 
 header a:visited{
@@ -274,12 +291,36 @@ header a:visited{
 }
 
 @media screen and (max-width: 1470px){
+
+    .mainContent{
+        flex-direction: column;
+    }
+
+    #about h1{
+        height:auto;
+        border:none;
+        margin-left:2em;
+    }
+
+    #about p{
+        padding: 0 0 1em 0;
+        font-size:200%;
+        text-align: center;
+        width:100%;
+        border-bottom: solid 0.1em rgb(255, 0, 0, 0.6);
+    }
+
+    #about img{
+        border-color: rgb(255, 0, 0);
+    }
+
     #border{
         flex-direction: column;
-        margin:1em;
-        width:25em;
-        margin-left: auto;
-        margin-right:auto;
+        width:100vw;
+        margin:0;
+        background: none;
+        border:none;
+        box-shadow: none;
     }
 
     body{
@@ -288,12 +329,6 @@ header a:visited{
 }
 
 @media screen and (max-width:1330px) {
-    #about{
-        grid-template-areas: "title"
-        "content";
-        grid-template-rows: 10em 1fr;
-        grid-template-columns: 1fr;
-    }
 
     .title{
         height:10em;
@@ -322,6 +357,16 @@ header a:visited{
         text-align: start;
         margin-bottom:0.5em;
     }
+
+    header a{
+        font-size:1.5em;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header a{
+        font-size:1.2em;
+    }
 }
 
 @media screen and (max-width: 500px){
@@ -331,6 +376,10 @@ header a:visited{
         "content";
         grid-template-rows: 5em 1fr;
         grid-template-columns: 1fr;
+    }
+
+    #about img{
+        width:15em;
     }
 
     .title{
@@ -344,10 +393,24 @@ header a:visited{
     .content p{
         font-size:1.5em;
     }
-}
 
-@media screen and (max-width: 400px){
     header h1, #about h1{
         font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header a{
+        font-size:1em;
+    }
+}
+
+@media screen and (max-width:360px){
+    header a{
+        font-size: 0.8em;
+    }
+
+    header h1{
+        font-size:1.5em;
     }
 }
