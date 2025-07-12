@@ -303,14 +303,16 @@ header a:visited{
     color:white;
 }
 
-@media screen and (max-width: 1470px){
+@media screen and (max-width: 1600px){
 
     .mainContent{
         flex-direction: column;
+        padding:0;
     }
 
-    #about img{
-        width:30vw;
+    .mainContent p{
+        margin: 0;
+        padding: 0;
     }
 
     #about h1{
@@ -334,6 +336,7 @@ header a:visited{
         background: none;
         border:none;
         box-shadow: none;
+        padding: 0;
     }
 
     body{
@@ -352,7 +355,7 @@ header a:visited{
 
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 775px){
     .project p{
         font-size: 1em;
     }
@@ -376,13 +379,17 @@ header a:visited{
     }
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 585px){
     header a{
         font-size:1.2em;
     }
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 540px){
+
+    body{
+        grid-template-rows: 10vh repeat(6, 1fr);
+    }
 
     #about{
         grid-template-areas: "title"
@@ -412,18 +419,22 @@ header a:visited{
     }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 470px){
     header a{
         font-size:1em;
     }
 }
 
-@media screen and (max-width:360px){
+@media screen and (max-width:390px){
     header a{
         font-size: 0.8em;
     }
 
     header h1{
         font-size:1.5em;
+    }
+
+    body{
+        grid-template-rows: 7.5vh repeat(6, 1fr);
     }
 }
