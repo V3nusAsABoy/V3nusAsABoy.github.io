@@ -342,6 +342,11 @@ header a:visited{
     body{
         grid-template-rows: 15vh repeat(6, 1fr);
     }
+
+    #scrollForMore{
+        font-size: 1em;
+        padding-top:3em;
+    }
 }
 
 @media screen and (max-width:1330px) {
@@ -388,7 +393,7 @@ header a:visited{
 @media screen and (max-width: 540px){
 
     body{
-        grid-template-rows: 10vh repeat(6, 1fr);
+        grid-template-rows: 10vh 90vh repeat(5, 1fr);
     }
 
     #about{
@@ -414,6 +419,10 @@ header a:visited{
         font-size:1.5em;
     }
 
+    #about p{
+        font-size: 150%;
+    }
+
     header h1, #about h1{
         font-size: 2em;
     }
@@ -435,6 +444,6 @@ header a:visited{
     }
 
     body{
-        grid-template-rows: 7.5vh repeat(6, 1fr);
+        grid-template-rows: 7.5vh 92.5vh repeat(5, 1fr);
     }
 }
