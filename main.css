@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
 :root{
-    --thegreen: rgb(0, 107, 73);
+    --thegreen: rgb(0, 193, 29);
     --thedefault: rgb(255, 247, 230);
-    --theblue: rgb(0, 41, 130);
+    --thepurple: rgb(136, 118, 250);
 }
 
 *{
@@ -65,8 +65,8 @@ h3{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--thegreen);
-    background-image: linear-gradient(rgb(0, 160, 110), var(--thegreen));
+    background-color: var(--thepurple);
+    background-image: linear-gradient(rgb(0, 160, 110), var(--thepurple));
     grid-area: title;
     height:10em;
 }
@@ -84,7 +84,8 @@ h3{
     font-weight: 300;
     margin:2em;
     padding:1em;
-    border-bottom: solid 0.1em var(--theblue);
+    color:white;
+    border-bottom: solid 0.1em white;
 }
 
 #scrollForMore{
@@ -117,12 +118,12 @@ i{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgb(0, 0, 75), rgb(0, 0, 55));
+    background-color: var(--thepurple);
 }
 
 #about h1{
     color:white;
-    border-right:solid 0.1em white;
+    border-right:solid 0.05em white;
     padding-right:2em;
     height:12em;
     align-items: center;
@@ -135,13 +136,11 @@ i{
 }
 
 #border{
-    background-color:rgb(255, 229, 255);
+    background-color:rgb(0, 0, 0);
     padding:1em;
-    /*border-radius: 3em;*/
     display:flex;
     flex-direction: row;
     align-items: center;
-    border: solid 0.1em var(--thegreen);
     position:relative;
     left:20em;
     width:70%;
@@ -185,7 +184,7 @@ i{
 
 #experience{
     grid-area: experience;
-    background-image: linear-gradient(rgb(0, 0, 75), rgb(0, 0, 55));
+    background-color: var(--thegreen);
     display: flex;
     align-items: center;
     flex-direction: column;
