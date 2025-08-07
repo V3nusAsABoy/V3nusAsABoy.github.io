@@ -20,19 +20,16 @@ body {
     "projects"
     "contact"
     "footer";
-    grid-template-rows: 10vh 85vh repeat(5, 1fr);
+    grid-template-rows: 7.5vh 92.5vh repeat(5, 1fr);
     position:absolute;
     height:100%;
 }
 
 header{
     grid-area: header;
-    background-color: black;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    border-bottom: 0.1em solid white;
-    align-items: center;
+    flex-direction: row;
+    background-color: var(--thepurple);
 }
 
 header h1, .title h1, #experience h1{
@@ -70,10 +67,11 @@ h3{
 .mainContent{
     display: grid;
     grid-template-areas: ". . . ."
+    ". img . ."
     ". img text ."
     ". . . .";
-    grid-template-rows: 12.5vh 50vh 6.25vh;
-    grid-template-columns: 1fr 25em 30em 1fr;
+    grid-template-rows: 15vh 10vh 40vh 20vh;
+    grid-template-columns: 1fr 35em 40em 1fr;
     width:100%;
 }
 
@@ -86,20 +84,10 @@ h3{
 }
 
 .mainContent p{
-    font-size:1.5em;
+    font-size:2em;
     font-family:'Source Serif 4', serif;
     font-weight: 300;
     color:white;
-}
-
-#scrollForMore{
-    text-align: center;
-    font-size: 2em;
-    /*font-family: "Roboto", sans-serif;*/
-    font-family:'Source Serif 4', serif;
-    font-weight: 300;
-    color:white;
-    padding: 0.5em;
 }
 
 i{
@@ -116,11 +104,12 @@ i{
 
 #about h1{
     color:white;
+    font-size:4em;
 }
 
 #about img{
-    width: 20em;
-    border-radius: 5em;
+    width:30em;
+    border-radius: 10em;
 }
 
 #skills{
@@ -161,7 +150,7 @@ i{
 
 #experience{
     grid-area: experience;
-    background-color: var(--thegreen);
+    background-color: var(--thepurple);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -181,7 +170,7 @@ i{
 
 #contact{
     grid-area: contact;
-    background-image: linear-gradient(rgb(0, 0, 75), rgb(0, 0, 55));
+    background-color: var(--thepurple);
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -273,13 +262,11 @@ header nav{
     /*font-family:"Roboto", sans-serif;*/
     font-family:'Source Serif 4', serif;
     font-weight: 300;
-    border-top: 0.1em solid white;
     width:100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
 }
 
-header a{
+header a, header h1{
     color:white;
     text-decoration: none;
     margin: 0.5em 1em 0.5em 1em;
@@ -302,26 +289,13 @@ header a:visited{
     #about h1{
         height:auto;
         border:none;
-        margin-left:2em;
     }
 
     #about p{
         font-size:200%;
-        text-align: center;
         width:100%;
         color:white;
         border-bottom:0;
-    }
-
-    #border{
-        flex-direction: column;
-        width:100vw;
-        margin:0;
-        background: none;
-        border:none;
-        box-shadow: none;
-        padding: 0;
-        left:0;
     }
 
     #scrollForMore{
@@ -352,6 +326,23 @@ header a:visited{
         border-right:none;
     }
 
+}
+
+@media screen and (max-width: 1230px){
+    .mainContent{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top:1em;
+    }
+
+    .mainContent p, .mainContent h1{
+        text-align: center;
+    }
+
+    .textSection{
+        width:80%;
+    }
 }
 
 @media screen and (max-width: 775px){
