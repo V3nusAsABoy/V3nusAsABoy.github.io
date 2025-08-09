@@ -4,7 +4,7 @@
 :root{
     --thegreen: rgb(0, 193, 29);
     --thedefault: rgb(255, 247, 230);
-    --thepurple: rgb(136, 118, 250);
+    --thepurple: rgb(70, 56, 161);
 }
 
 *{
@@ -29,10 +29,14 @@ header{
     grid-area: header;
     display: flex;
     flex-direction: row;
-    background-color: var(--thepurple);
+    background: linear-gradient(to right, var(--thedefault) 45%, var(--thepurple) 45%);
 }
 
-header h1, .title h1, #experience h1{
+header h1{
+    color:black;
+}
+
+#experience h1{
     color: white;
     text-align: center;
 }
@@ -97,7 +101,7 @@ i{
 
 #about{
     grid-area: about;
-    background-color: var(--thepurple);
+    background: linear-gradient(to right, var(--thedefault) 45%, var(--thepurple) 45%);
     display:flex;
     flex-direction: column;
 }
@@ -105,6 +109,7 @@ i{
 #about h1{
     color:white;
     font-size:4em;
+    border-bottom: 0.01em solid white;
 }
 
 #about img{
@@ -267,10 +272,13 @@ header nav{
 }
 
 header a, header h1{
-    color:white;
     text-decoration: none;
     margin: 0.5em 1em 0.5em 1em;
     font-size:2em;
+}
+
+header a{
+    color: white;
 }
 
 header a:visited{
@@ -288,7 +296,6 @@ header a:visited{
 
     #about h1{
         height:auto;
-        border:none;
     }
 
     #about p{
@@ -326,9 +333,18 @@ header a:visited{
         border-right:none;
     }
 
-}
+    header{
+        background: var(--thepurple);
+    }
 
-@media screen and (max-width: 1230px){
+    header h1{
+        color:white;
+    }
+
+    #about{
+        background: var(--thepurple);
+    }
+
     .mainContent{
         display:flex;
         flex-direction: column;
@@ -342,6 +358,24 @@ header a:visited{
 
     .textSection{
         width:80%;
+    }
+
+}
+
+@media screen and (max-width: 1230px){
+
+    .mainContent p, .mainContent h1{
+        text-align: center;
+    }
+
+    .textSection{
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 930px){
+    header h1{
+        display:none;
     }
 }
 
@@ -369,6 +403,16 @@ header a:visited{
     }
 }
 
+@media screen and (max-width: 715px){
+    #about img{
+        width:17.5em;
+    }
+
+    #about h1{
+        font-size:3.5em;
+    }
+}
+
 @media screen and (max-width: 585px){
     header a{
         font-size:1.2em;
@@ -376,10 +420,6 @@ header a:visited{
 }
 
 @media screen and (max-width: 540px){
-
-    #about img{
-        width:17.5em;
-    }
 
     #border p{
         font-size:150%;
@@ -397,11 +437,7 @@ header a:visited{
         font-size:1.5em;
     }
 
-    .mainContent p{
-        font-size: 150%;
-    }
-
-    header h1, #about h1{
+    header h1{
         font-size: 2em;
     }
 }
@@ -412,6 +448,16 @@ header a:visited{
     }
     header a{
         font-size:1em;
+    }
+}
+
+@media screen and (max-width:450px){
+    #about h1{
+        font-size:2.5em;
+    }
+
+    #about p{
+        font-size: 1.5em;
     }
 }
 
