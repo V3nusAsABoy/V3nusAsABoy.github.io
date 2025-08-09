@@ -17,6 +17,24 @@
                 $('#img').animate({right: "0", opacity: "show"});
             }
         })
+
+        $(window).scroll(function() {
+            var windowScrollTop = $(window).scrollTop();
+            var windowHeight = $(window).height();
+
+            $('#skills .skills').each(function(index) {
+                var $item = $(this);
+                var itemTop = $item.offset().top;
+
+                // Animate when the item is within the viewport
+                if (itemTop < (windowScrollTop + windowHeight - 100) && !$item.hasClass('animated')) {
+                    $item.addClass('animated').animate({
+                        opacity: 1,
+                        left: '0px'
+                    }); // Staggered animation
+                }
+            });
+        });
     </script>
 </head>
 <body>

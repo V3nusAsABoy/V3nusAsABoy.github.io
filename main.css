@@ -153,6 +153,12 @@ i{
     padding-top:1em;
 }
 
+#skills .skills{
+    opacity:0;
+    position: relative;
+    left: 10em;
+}
+
 .skill img{
     width:5em;
 }
