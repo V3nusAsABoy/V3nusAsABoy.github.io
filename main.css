@@ -86,7 +86,6 @@ h3{
 .textSection{
     grid-area: text;
     position:relative;
-    left:10em;
 }
 
 .mainContent p{
@@ -118,7 +117,6 @@ i{
     width:30em;
     border-radius: 10em;
     position:relative;
-    right:10em;
 }
 
 #skills{
@@ -359,10 +357,6 @@ header a:visited{
         background: var(--thepurple);
     }
 
-    #about img{
-        right:0;
-    }
-
     .mainContent{
         display:flex;
         flex-direction: column;
@@ -376,7 +370,6 @@ header a:visited{
 
     .textSection{
         width:80%;
-        left:0;
     }
 
 }
