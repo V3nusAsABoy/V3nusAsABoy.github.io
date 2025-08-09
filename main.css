@@ -359,6 +359,10 @@ header a:visited{
         background: var(--thepurple);
     }
 
+    #about img{
+        right:0;
+    }
+
     .mainContent{
         display:flex;
         flex-direction: column;
@@ -372,6 +376,7 @@ header a:visited{
 
     .textSection{
         width:80%;
+        left:0;
     }
 
 }
