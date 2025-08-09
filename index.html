@@ -16,7 +16,19 @@
                 $('#img').hide();
                 $('#img').animate({right: "0", opacity: "show"});
             }
-        })
+
+            $(".project, #contact .skill").hover(function(){
+                $(this).css({
+                    boxShadow: '1em 1em 3em rgba(0, 0, 0, 0.358)',
+                    right: '1em'
+                });
+                }, function(){
+                    $(this).css({
+                        boxShadow: 'none',
+                        right: '0'
+                    })  
+                });
+            });
 
         $(window).scroll(function() {
             var windowScrollTop = $(window).scrollTop();
@@ -35,6 +47,7 @@
                 }
             });
         });
+        
     </script>
 </head>
 <body>
