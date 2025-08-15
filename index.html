@@ -12,8 +12,14 @@
          $(document).ready(function(){
             if(jQuery(window).width() > 1330){
                 $('.textSection').hide();
+                $('.textSection').css({
+                    left: "5em"
+                });
                 $('.textSection').animate({left: "0", opacity: "show"});
                 $('#img').hide();
+                $('#img').css({
+                    right: "5em"
+                });
                 $('#img').animate({right: "0", opacity: "show"});
             }
 
