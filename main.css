@@ -11,6 +11,26 @@
     margin: 0;
 }
 
+#downloadResume{
+    background-color: rgb(67, 57, 134);
+    color:white;
+    border:none;
+    font-size:2em;
+    width:60%;
+    align-self: center;
+    border: white 0.01em solid;
+    font-family: 'Source Serif 4', serif;
+    font-weight:300;
+    text-align: center;
+    margin-right:2em;
+}
+
+#downloadResume:hover{
+    background-color: white;
+    cursor: pointer;
+    color:rgb(67, 57, 134);
+}
+
 body {
     display:grid;
     grid-template-areas: "header"
@@ -86,6 +106,8 @@ h3{
 .textSection{
     grid-area: text;
     position:relative;
+    display:flex;
+    flex-direction: column;
 }
 
 .mainContent p{
