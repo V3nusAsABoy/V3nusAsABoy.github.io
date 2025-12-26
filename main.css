@@ -396,6 +396,10 @@ header a:visited{
         margin-top:1em;
     }
 
+    #downloadResume{
+        margin:1vw;
+    }
+
     .mainContent p, .mainContent h1{
         text-align: center;
     }
